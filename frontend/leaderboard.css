@@ -65,3 +65,31 @@ footer {
   text-align: center;
   font-family: 'Kumbh Sans', sans-serif;
 }
+main {
+  padding: 15px;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+td, th{
+  border: 1px solid grey;
+  padding: 8px;
+  margin: 8px;
+}
+
+th { 
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+tr:hover {
+  background-color: rosybrown;
+  color: black;
+}

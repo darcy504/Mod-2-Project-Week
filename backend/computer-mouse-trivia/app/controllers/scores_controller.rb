@@ -1,12 +1,12 @@
 class ScoresController < ApplicationController
     def index 
         @scores = Score.all 
-        render json: @scores 
+        render json: @scores, include: [:user]
     end
 
     def show 
         @score = Score.find(params[:id])
-        render json: @score 
+        render json: @score, include: [:user]
     end
 
     def create 
