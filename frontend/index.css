@@ -2,7 +2,6 @@
 body {
   background-image: url("https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
   background-color: #cccccc;
-
   background-repeat: no-repeat; 
   background-size: cover;
   
@@ -11,30 +10,35 @@ body {
 header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: 0; 
     background: rosybrown;
   }
   
-  h1{
+  h1,h2, h3 {
     display: flex;
-    color: white;
+    justify-content: flex-start;
+    color: black;
     margin: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
   }
 
   .navigation{
     display: flex;
+    justify-content: flex-end;
     list-style: none;
   }
   .navigation a {
     text-decoration: none;
-    display: block;
+    display: inline;
     padding: 1em;
-    color: white;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
   }
   
   .navigation a:hover {
-    background: #1565C0;
+    background: lightgrey;
   }
   
   @media all and (max-width: 800px) {
@@ -57,4 +61,15 @@ header {
     .navigation li:last-of-type a {
       border-bottom: none;
     }
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
   }
