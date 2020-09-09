@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat; 
   background-size: cover;
   
+  
  }
 
 header {
@@ -12,7 +13,6 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 0; 
     background: rosybrown;
   }
   
@@ -35,6 +35,7 @@ header {
     padding: 1em;
     color: black;
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold; 
   }
   
   .navigation a:hover {
@@ -72,4 +73,7 @@ header {
     color: white;
     text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
   }
+
+  

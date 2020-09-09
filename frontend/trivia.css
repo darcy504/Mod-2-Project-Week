@@ -65,3 +65,12 @@ footer {
   text-align: center;
   font-family: 'Kumbh Sans', sans-serif;
 }
+
+.container {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 35px;
+}
+
+p {
+  margin: 35px;
+}
