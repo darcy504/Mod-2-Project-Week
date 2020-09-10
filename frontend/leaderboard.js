@@ -1,18 +1,16 @@
 fetch('http://localhost:3000/scores')
     .then(response => response.json())
     .then(scores => {
-        loadTableData(scores);
-    })
-    
+        loadTableData(scores)
+    }
+)
 
 function loadTableData(scores) {
-    console.log(scores)
-    let tableBody = document.getElementById('tableData');
-    let dataHtml = '';
-
-    for(let data of scores){
-        dataHtml +=`<tr><td>${data.user.name}</td><td>${data.number}</td></tr>`;
-    console.log(data.number)
-    }
-tableBody.innerHTML = dataHtml; 
+    const tableBody = document.querySelector('#tableData')
+    sorts = scores.sort((a,b) => b.number - a.number)
+    sorts.forEach(sort=> {
+        const scoreElement = document.createElement('tr')
+        scoreElement.innerHTML = `<tr><td>${sort.user.name}</td><td>${sort.number}</td></tr>`;
+        tableBody.append(scoreElement)
+    })
 }
