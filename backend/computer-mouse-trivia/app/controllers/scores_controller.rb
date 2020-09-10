@@ -11,6 +11,7 @@ class ScoresController < ApplicationController
 
     def create 
         @score = Score.create number: params[:number], user_id: params[:user_id]
-        render json: @score 
+        # render json: @score
+        redirect_to "http://localhost:3001/log.html"
     end
 end

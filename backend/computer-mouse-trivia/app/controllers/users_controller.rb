@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
     def create 
         @user = User.create name: params[:name]
-        render json: @user 
+        redirect_to "http://localhost:3001/log.html"
     end
 
 end
