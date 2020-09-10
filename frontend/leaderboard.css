@@ -75,6 +75,10 @@ table {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+form {
+  margin: 40px;
+}
+
 td, th{
   border: 1px solid grey;
   padding: 8px;
