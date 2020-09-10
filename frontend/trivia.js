@@ -29,16 +29,28 @@ function updateQuestion(correctAnswer, incorrectAnswers, questionText){
     questionObject["answers"] = lodash.shuffle(newAnswers)
     populateQuestionsContainer()
 
+    // function populateQuestionsContainer(){
+    //     let $questionText = document.createElement('h2')
+    //     // let $newList = document.createElement('ul')
+    //     let $questionsContainer = document.querySelector('#questions-container')
+    //     let answerContainer = document.querySelector('#answer-container')
+    //     $questionText.innerText = questionObject.questionText
+    //     $questionsContainer.append($questionText)
+    //     questionObject.answers.forEach(answer => {
+    //         let $answer = document.createElement('p')
+    //         $answer.innerText = answer.text
+    //         answerContainer.append($answer)
+    //     })
+    // }
+
     function populateQuestionsContainer(){
         let $questionText = document.createElement('h2')
-        let $newList = document.createElement('ul')
         let $questionsContainer = document.querySelector('#questions-container')
         $questionText.innerText = questionObject.questionText
         $questionsContainer.append($questionText)
         questionObject.answers.forEach(answer => {
             let $answer = document.createElement('p')
             $answer.innerText = answer.text
-            $questionsContainer.append($answer)
         })
     }
 }
