@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    background: rosybrown;
+}
+
+h1,h2, h3 {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    margin: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.navigation a {
+    text-decoration: none;
+    display: inline;
+    padding: 1em;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navigation a:hover {
+    background: lightgrey;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+    justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+    }
+    .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+    border-bottom: none;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main {
+
+    padding: 15px;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+form {
+    margin: 10px;
+    display: block;
+}
+
+td, th{
+    border: 1px solid grey;
+    padding: 8px;
+    margin: 8px;
+}
+th { 
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr:hover {
+    background-color: tan;
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+form {
+font-family: 'Kumbh Sans', sans-serif;
+}

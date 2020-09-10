@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="log.js" defer></script>
+    <link rel="stylesheet" href="log.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <title>Log</title>
+</head>
+<body>
+    <header>
+        <h1>Mice Like Cheese!</h1>
+        <h2>Which mouse can eat the most cheese!</h2> 
+        
+        <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="log.html">Log Your Cheese</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Input your cheese:</h2>
+        <form method="POST" action="http://localhost:3000/scores">
+            <label for="user-field">Mouse Name:</label>
+            <select id="user-field" name="user_id"></select>
+            <label for="cheese-field">Number of Cheeses Eaten:</label>
+            <input name="number" type="text" id="cheese-field">
+            <input type="submit" value="Cheese Me!">
+        </form>
+
+        <h2>Create a new Mouse:</h2>
+
+        <form method="POST" action="http://localhost:3000/users">
+            <label for="user-name">Mouse Name:</label>
+            <input name="name" type="text" id="user-name">
+            <input type="submit" value="Create New Mouse!">
+        </form>
+        <img src="https://live.staticflickr.com/4912/32154889558_fd34dc2e41_b.jpg" alt="Mouse with Cheese">
+    </main>
+    <footer>
+        <p>Created by: D'Arcy Draper, Jenn Grenier, and Matt Malecki</p>
+        <p>🐭🧀🐭</p>
+    </footer>
+</body>
+</html>
