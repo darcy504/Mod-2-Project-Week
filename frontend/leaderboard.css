@@ -66,6 +66,7 @@ footer {
   font-family: 'Kumbh Sans', sans-serif;
 }
 main {
+
   padding: 15px;
 }
 table {
@@ -74,7 +75,6 @@ table {
   width: 100%;
   font-family: 'Kumbh Sans', sans-serif;
 }
-
 td, th{
   border: 1px solid grey;
   padding: 8px;
@@ -92,4 +92,12 @@ tr:nth-child(even) {
 tr:hover {
   background-color: rosybrown;
   color: black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  padding: 10px;
 }
