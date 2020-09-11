@@ -1,3 +1,10 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-image: url(https://images.unsplash.com/photo-1581332681730-0d06a3c3823f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
 
 header {
   display: flex;
@@ -68,12 +75,15 @@ footer {
 main {
 
   padding: 15px;
+  border-radius: 25px;
+  /* background-image: url(https://i.pinimg.com/originals/f5/c0/f8/f5c0f80a72684de326382025f33b44a1.png); */
 }
 table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
+  width: 50%;
   font-family: 'Kumbh Sans', sans-serif;
+  
 }
 td, th{
   border: 1px solid grey;
@@ -89,15 +99,19 @@ tr:nth-child(even) {
   background-color: lightgrey;
 }
 
-tr:hover {
+tr:nth-child(odd) {
   background-color: rosybrown;
+}
+
+tr:hover {
+  background-color: wheat;
   color: black;
 }
 
-img {
+/* img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 100px;
   padding: 10px;
-}
+} */

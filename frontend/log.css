@@ -1,3 +1,9 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1581270023016-1b7ea9be8fad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -67,12 +73,17 @@ footer {
 main {
 
     padding: 15px;
+    background-color:gray;
+    width: 50%;
+    border-radius: 25px;
+    margin: 10px;
 }
 table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
     font-family: 'Kumbh Sans', sans-serif;
+    
 }
 
 form {
