@@ -10,7 +10,7 @@ Tuesday, September 8th through Friday, September 11th, 2020
 
 ## How to Use/Open
 
-1. clone code onto your computer
+1. clone code onto your computer and open in your preferred text editor
 2. Run `bundle install`
 3. Run `rails db:migrate`
 4. Run `rails db:seed`
